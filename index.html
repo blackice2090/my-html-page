@@ -1,12 +1,223 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>أول مثال HTML5</title>
+    <title>دليل أكواد HTML</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        code {
+            background-color: #f5f5f5;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: right;
+        }
+
+        th {
+            background-color: #f0f0f0;
+        }
+    </style>
 </head>
 <body>
-    <h1>مرحبًا بك في HTML5!</h1>
-    <p>هذه صفحة HTML5 بسيطة تحتوي على عنوان وفقرة.</p>
+
+<h1>دليل أكواد HTML</h1>
+
+<p>هذا الدليل يقدم شرحًا تفصيليًا لأكواد HTML المستخدمة في سلسلة من الشرائح التعليمية.</p>
+
+<h2>عناصر الصور</h2>
+
+<ul>
+    <li>
+        <strong><code>&lt;img&gt;</code>:</strong>
+        يُستخدم لعرض صورة في صفحة الويب.
+        <ul>
+            <li><strong><code>src</code>:</strong> يُحدد مسار الصورة التي تريد عرضها.</li>
+            <li><strong><code>alt</code>:</strong> يُحدد نصًا بديلًا يظهر في حالة عدم تحميل الصورة.</li>
+            <li><strong><code>width</code>:</strong> يُحدد عرض الصورة بالبكسل.</li>
+            <li><strong><code>height</code>:</strong> يُحدد ارتفاع الصورة بالبكسل.</li>
+        </ul>
+    </li>
+</ul>
+
+<p><strong>مثال:</strong></p>
+<pre><code>&lt;img src="images/my-image.jpg" alt=" صورتي الشخصية" width="300" height="200"&gt;</code></pre>
+
+<h2>عناصر النصوص</h2>
+
+<ul>
+    <li><strong><code>&lt;p&gt;</code>:</strong> يُستخدم لإنشاء فقرة نصية.</li>
+    <li>
+        <strong><code>&lt;h1&gt;</code> إلى <code>&lt;h6&gt;</code>:</strong>
+        تُستخدم لإنشاء عناوين رئيسية وفرعية، حيث `<h1>` هو العنوان الرئيسي الأكبر حجمًا و `<h6>` هو العنوان الفرعي الأصغر حجمًا.
+    </li>
+    <li><strong><code>&lt;br&gt;</code>:</strong> يُستخدم لإضافة فاصل أسطر.</li>
+</ul>
+
+<p><strong>مثال:</strong></p>
+<pre><code>&lt;p&gt;هذه فقرة نصية.&lt;/p&gt;
+&lt;h1&gt;عنوان رئيسي&lt;/h1&gt;
+&lt;h2&gt;عنوان فرعي&lt;/h2&gt;
+&lt;br&gt;
+&lt;p&gt;هذه فقرة نصية أخرى.&lt;/p&gt;</code></pre>
+
+<h2>عناصر القوائم</h2>
+
+<ul>
+    <li>
+        <strong><code>&lt;ul&gt;</code>:</strong>
+        تُستخدم لإنشاء قائمة غير مرتبة (bullet points).
+        <ul>
+            <li><strong><code>&lt;li&gt;</code>:</strong> يُستخدم لإنشاء عنصر في القائمة.</li>
+        </ul>
+    </li>
+    <li>
+        <strong><code>&lt;ol&gt;</code>:</strong>
+        تُستخدم لإنشاء قائمة مرتبة (numbered list).
+        <ul>
+            <li><strong><code>&lt;li&gt;</code>:</strong> يُستخدم لإنشاء عنصر في القائمة.</li>
+        </ul>
+    </li>
+    <li>
+        <strong><code>&lt;dl&gt;</code>:</strong>
+        تُستخدم لإنشاء قائمة تعريفية (definition list).
+        <ul>
+            <li><strong><code>&lt;dt&gt;</code>:</strong> يُستخدم لإنشاء مصطلح في القائمة.</li>
+            <li><strong><code>&lt;dd&gt;</code>:</strong> يُستخدم لإنشاء تعريف للمصطلح.</li>
+        </ul>
+    </li>
+</ul>
+
+<p><strong>مثال:</strong></p>
+<pre><code>&lt;ul&gt;
+  &lt;li&gt;عنصر 1&lt;/li&gt;
+  &lt;li&gt;عنصر 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;عنصر 1&lt;/li&gt;
+  &lt;li&gt;عنصر 2&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;مصطلح 1&lt;/dt&gt;
+  &lt;dd&gt;تعريف المصطلح 1&lt;/dd&gt;
+  &lt;dt&gt;مصطلح 2&lt;/dt&gt;
+  &lt;dd&gt;تعريف المصطلح 2&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+
+<h2>عناصر الجداول</h2>
+
+<ul>
+    <li>
+        <strong><code>&lt;table&gt;</code>:</strong>
+        يُستخدم لإنشاء جدول.
+        <ul>
+            <li><strong><code>&lt;tr&gt;</code>:</strong> يُستخدم لإنشاء صف في الجدول.</li>
+            <li><strong><code>&lt;th&gt;</code>:</strong> يُستخدم لإنشاء خلية عنوان في الجدول.</li>
+            <li><strong><code>&lt;td&gt;</code>:</strong> يُستخدم لإنشاء خلية بيانات في الجدول.</li>
+            <li><strong><code>&lt;caption&gt;</code>:</strong> يُستخدم لإنشاء عنوان للجدول.</li>
+            <li><strong><code>&lt;thead&gt;</code>:</strong> يُستخدم لإنشاء رأس الجدول.</li>
+            <li><strong><code>&lt;tbody&gt;</code>:</strong> يُستخدم لإنشاء جسم الجدول.</li>
+            <li><strong><code>&lt;tfoot&gt;</code>:</strong> يُستخدم لإنشاء تذييل الجدول.</li>
+        </ul>
+    </li>
+</ul>
+
+<p><strong>مثال:</strong></p>
+<pre><code>&lt;table&gt;
+  &lt;caption&gt;جدول البيانات&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;الاسم&lt;/th&gt;
+      &lt;th&gt;العمر&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;أحمد&lt;/td&gt;
+      &lt;td&gt;30&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;محمد&lt;/td&gt;
+      &lt;td&gt;25&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+
+<h2>عناصر النماذج</h2>
+
+<ul>
+    <li>
+        <strong><code>&lt;form&gt;</code>:</strong>
+        يُستخدم لإنشاء نموذج.
+        <ul>
+            <li><strong><code>method</code>:</strong> يُحدد طريقة إرسال البيانات إلى الخادم (get أو post).</li>
+            <li><strong><code>action</code>:</strong> يُحدد مسار البرنامج النصي الذي سيتعامل مع بيانات النموذج.</li>
+            <li><strong><code>&lt;input&gt;</code>:</strong> يُستخدم لإنشاء عناصر إدخال مختلفة مثل حقول النصوص، وأزرار الاختيار، وقوائم الاختيار.</li>
+            <li><strong><code>&lt;textarea&gt;</code>:</strong> يُستخدم لإنشاء منطقة نصية متعددة الأسطر.</li>
+            <li><strong><code>&lt;select&gt;</code>:</strong> يُستخدم لإنشاء قائمة اختيار.</li>
+            <li><strong><code>&lt;option&gt;</code>:</strong> يُستخدم لإنشاء خيارات في قائمة الاختيار.</li>
+            <li><strong><code>&lt;button&gt;</code>:</strong> يُستخدم لإنشاء زر.</li>
+        </ul>
+    </li>
+</ul>
+
+<p><strong>مثال:</strong></p>
+<pre><code>&lt;form method="post" action="process.php"&gt;
+  &lt;label for="name"&gt;الاسم:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name"&gt;
+
+  &lt;label for="email"&gt;البريد الإلكتروني:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email"&gt;
+
+  &lt;button type="submit"&gt;إرسال&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+
+<h2>عناصر الربط الداخلي</h2>
+
+<ul>
+    <li>
+        <strong><code>&lt;a&gt;</code>:</strong>
+        يُستخدم لإنشاء رابط.
+        <ul>
+            <li><strong><code>href</code>:</strong> يُحدد مسار الصفحة أو العنصر الذي يشير إليه الرابط.</li>
+            <li><strong><code>id</code>:</strong> يُستخدم لتعريف عنصر معين في الصفحة.</li>
+        </ul>
+    </li>
+</ul>
+
+<p><strong>مثال:</strong></p>
+<pre><code>&lt;a href="#section2"&gt;الانتقال إلى القسم 2&lt;/a&gt;
+
+&lt;h2 id="section2"&gt;القسم 2&lt;/h2&gt;</code></pre>
+
+<h2>السمات الهامة</h2>
+
+<ul>
+    <li><strong><code>class</code>:</strong> تُستخدم لتحديد فئة أو أكثر للعنصر، مما يسمح بتطبيق أنماط CSS متعددة على نفس العنصر.</li>
+    <li><strong><code>style</code>:</strong> تُستخدم لتطبيق أنماط CSS مباشرة على العنصر.</li>
+    <li><strong><code>title</code>:</strong> تُستخدم لإضافة عنوان للعنصر يظهر عند تمرير الماوس فوقه.</li>
+</ul>
+
 </body>
 </html>
