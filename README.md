@@ -1,28 +1,28 @@
-# 📌 مقدمة
+# 📌 Introduction
 
-هذا المستودع يحتوي على شرح مفصل لعناصر **HTML5** الأساسية، مع أمثلة عملية لكل عنصر. يمكن استخدام هذا الملف كمرجع شامل لتعلم **HTML5** وبناء صفحات ويب متكاملة.
+This repository contains a detailed explanation of the essential **HTML5** elements, along with practical examples for each element. This file serves as a comprehensive reference for learning **HTML5** and building complete web pages.
 
-## 🔗 الفهرس
-- [إضافة الصور](#إضافة-الصور)
-- [الرموز الخاصة والخطوط الأفقية](#الرموز-الخاصة-والخطوط-الأفقية)
-- [القوائم](#القوائم)
-- [الجداول](#الجداول)
-- [النماذج](#النماذج)
-- [الروابط الداخلية](#الروابط-الداخلية)
-- [هيكلة الصفحة](#هيكلة-الصفحة)
+## 🔗 Table of Contents
+- [Adding Images](#adding-images)
+- [Special Characters and Horizontal Rules](#special-characters-and-horizontal-rules)
+- [Lists](#lists)
+- [Tables](#tables)
+- [Forms](#forms)
+- [Internal Linking](#internal-linking)
+- [Page Structure](#page-structure)
 
 ---
 
-## 🖼️ إضافة الصور
+## 🖼️ Adding Images
 ```html
-<img src="image.jpg" alt="وصف للصورة" width="300" height="200">
+<img src="image.jpg" alt="Image description" width="300" height="200">
 ```
-📌 **المعلمات:**
-- `src` لتحديد مصدر الصورة.
-- `alt` لنص بديل عند تعذر عرض الصورة.
-- `width` و `height` لتحديد الأبعاد بالبكسل.
+📌 **Attributes:**
+- `src` specifies the image source.
+- `alt` provides alternative text if the image cannot be displayed.
+- `width` and `height` set the dimensions in pixels.
 
-### 🔗 استخدام الصور كروابط
+### 🔗 Using Images as Links
 ```html
 <a href="https://example.com">
     <img src="logo.png" alt="Logo">
@@ -31,116 +31,117 @@
 
 ---
 
-## 🔣 الرموز الخاصة والخطوط الأفقية
+## 🔣 Special Characters and Horizontal Rules
 - `&copy;` → ©
 - `&lt;` → <
 - `&gt;` → >
 
-### 📏 إنشاء خط أفقي
+### 📏 Creating a Horizontal Rule
 ```html
 <hr>
 ```
 
 ---
 
-## 📜 القوائم
+## 📜 Lists
 
-### ✅ قائمة غير مرتبة (Unordered List)
+### ✅ Unordered List
 ```html
 <ul>
-    <li>العنصر الأول</li>
-    <li>العنصر الثاني</li>
+    <li>Item 1</li>
+    <li>Item 2</li>
 </ul>
 ```
 
-### 🔢 قائمة مرتبة (Ordered List)
+### 🔢 Ordered List
 ```html
 <ol>
-    <li>العنصر الأول</li>
-    <li>العنصر الثاني</li>
+    <li>Item 1</li>
+    <li>Item 2</li>
 </ol>
 ```
 
-### 🔄 قائمة وصفية (Description List)
+### 🔄 Description List
 ```html
 <dl>
     <dt>HTML</dt>
-    <dd>لغة ترميز النصوص</dd>
+    <dd>HyperText Markup Language</dd>
 </dl>
 ```
 
 ---
 
-## 📊 الجداول
-### جدول بسيط
+## 📊 Tables
+### Simple Table
 ```html
 <table border="1">
     <tr>
-        <th>العنوان 1</th>
-        <th>العنوان 2</th>
+        <th>Header 1</th>
+        <th>Header 2</th>
     </tr>
     <tr>
-        <td>بيانات 1</td>
-        <td>بيانات 2</td>
+        <td>Data 1</td>
+        <td>Data 2</td>
     </tr>
 </table>
 ```
 
 ---
 
-## 📝 النماذج
-### نموذج إدخال بيانات
+## 📝 Forms
+### Data Input Form
 ```html
 <form action="submit.php" method="post">
-    <label for="name">الاسم:</label>
+    <label for="name">Name:</label>
     <input type="text" id="name" name="name" required>
     
-    <label for="email">البريد الإلكتروني:</label>
+    <label for="email">Email:</label>
     <input type="email" id="email" name="email" required>
 
-    <input type="submit" value="إرسال">
+    <input type="submit" value="Submit">
 </form>
 ```
 
 ---
 
-## 🔗 الروابط الداخلية
+## 🔗 Internal Linking
 ```html
-<a href="#section1">انتقل إلى القسم الأول</a>
+<a href="#section1">Go to Section 1</a>
 
-<h2 id="section1">القسم الأول</h2>
+<h2 id="section1">Section 1</h2>
 ```
 
 ---
 
-## 🏗️ هيكلة الصفحة
-### الهيدر والتذييل
+## 🏗️ Page Structure
+### Header and Footer
 ```html
 <header>
-    <h1>عنوان الموقع</h1>
+    <h1>Website Title</h1>
 </header>
 <footer>
-    <p>&copy; 2024 جميع الحقوق محفوظة</p>
+    <p>&copy; 2024 All Rights Reserved</p>
 </footer>
 ```
 
-### التنقل
+### Navigation
 ```html
 <nav>
     <ul>
-        <li><a href="index.html">الرئيسية</a></li>
-        <li><a href="about.html">من نحن</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
     </ul>
 </nav>
 ```
 
-### المحتوى الجانبي
+### Sidebar Content
 ```html
 <aside>
-    <p>معلومة إضافية...</p>
+    <p>Additional information...</p>
 </aside>
 ```
 
 ---
 
-## 📌 ملاحظات إضافية�
+## 📌 Additional Notes
+=>
