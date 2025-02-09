@@ -18,8 +18,51 @@
             <li><a href="#meter">Meter Element</a></li>
             <li><a href="#images">Images</a></li>
             <li><a href="#tables">Tables</a></li>
+            <li><a href="#special">Special Characters & Rules</a></li>
+            <li><a href="#internal">Internal Linking</a></li>
         </ul>
     </nav>
+    
+    <section id="images">
+        <h2>Adding Images</h2>
+        <img src="img.jpg" alt="Sample Image" width="300" height="200">
+        <p><a href="https://example.com"><img src="logo.png" alt="Logo"></a></p>
+    </section>
+    
+    <section id="special">
+        <h2>Special Characters & Horizontal Rules</h2>
+        <p>Copyright symbol: &copy;</p>
+        <p>Less than: &lt; and Greater than: &gt;</p>
+        <hr>
+    </section>
+    
+    <section id="tables">
+        <h2>Basic Table</h2>
+        <table border="1">
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+            </tr>
+        </table>
+        
+        <h2>Using rowspan and colspan</h2>
+        <table border="1">
+            <tr>
+                <th colspan="2">Merged Header</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Rowspan Cell</td>
+                <td>Data A</td>
+            </tr>
+            <tr>
+                <td>Data B</td>
+            </tr>
+        </table>
+    </section>
     
     <section id="forms">
         <h2>Forms</h2>
@@ -60,37 +103,10 @@
         <meter id="progress" value="75" min="0" max="100">75%</meter>
     </section>
     
-    <section id="images">
-        <h2>Images</h2>
-        <img src="img.jpg" alt="Sample Image" width="300" height="200">
-    </section>
-    
-    <section id="tables">
-        <h2>Basic Table</h2>
-        <table border="1">
-            <tr>
-                <th>Header 1</th>
-                <th>Header 2</th>
-            </tr>
-            <tr>
-                <td>Data 1</td>
-                <td>Data 2</td>
-            </tr>
-        </table>
-        
-        <h2>Using rowspan and colspan</h2>
-        <table border="1">
-            <tr>
-                <th colspan="2">Merged Header</th>
-            </tr>
-            <tr>
-                <td rowspan="2">Rowspan Cell</td>
-                <td>Data A</td>
-            </tr>
-            <tr>
-                <td>Data B</td>
-            </tr>
-        </table>
+    <section id="internal">
+        <h2>Internal Linking</h2>
+        <p><a href="#special">Go to Special Characters</a></p>
+        <p><a href="#tables">Go to Tables</a></p>
     </section>
     
     <footer>
