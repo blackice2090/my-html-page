@@ -2,6 +2,9 @@
 
 This repository contains a detailed explanation of the essential **HTML5** elements, along with practical examples for each element. This file serves as a comprehensive reference for learning **HTML5** and building complete web pages.
 
+## 🌐 Live Demo
+You can view the full HTML page here: [HTML5 Elements Showcase](https://blackice2090.github.io/my-html-page/)
+
 ## 🔗 Table of Contents
 - [Adding Images](#adding-images)
 - [Special Characters and Horizontal Rules](#special-characters-and-horizontal-rules)
@@ -86,6 +89,22 @@ This repository contains a detailed explanation of the essential **HTML5** eleme
 </table>
 ```
 
+### Using rowspan and colspan
+```html
+<table border="1">
+    <tr>
+        <th colspan="2">Merged Header</th>
+    </tr>
+    <tr>
+        <td rowspan="2">Rowspan Cell</td>
+        <td>Data A</td>
+    </tr>
+    <tr>
+        <td>Data B</td>
+    </tr>
+</table>
+```
+
 ---
 
 ## 📝 Forms
@@ -144,4 +163,4 @@ This repository contains a detailed explanation of the essential **HTML5** eleme
 ---
 
 ## 📌 Additional Notes
-=>
+- ==>
